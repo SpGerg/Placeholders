@@ -35,6 +35,11 @@ namespace Placeholders.API.Features
             _registeredPlaceholders.Add(placeholder);
         }
 
+        public static void Unregister(IPlaceholder placeholder)
+        {
+            _registeredPlaceholders.Remove(placeholder);
+        }
+
         public static string SetPlaceholders(string uuid, string message)
         {
             var result = message;

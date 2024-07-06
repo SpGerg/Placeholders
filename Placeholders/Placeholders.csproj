@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="API\Features\Placeholders.cs" />
+    <Compile Include="API\Features\PlaceholdersAPI.cs" />
     <Compile Include="API\Interfaces\IPlaceholder.cs" />
     <Compile Include="API\Interfaces\IPlaceholderPlayerHook.cs" />
     <Compile Include="API\Interfaces\IPlaceholderHook.cs" />

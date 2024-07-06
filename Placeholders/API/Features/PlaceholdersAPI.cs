@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Placeholders.API.Features
 {
-    public static class Placeholders
+    public static class PlaceholdersAPI
     {
         public static IReadOnlyList<IPlaceholderInfo> RegisterdPlaceholders => _registeredPlaceholders.ToList();
 

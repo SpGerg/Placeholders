@@ -48,7 +48,7 @@ namespace Placeholders.API.Features
             foreach (Match match in matches)
             {
                 var placeholderString = match.Value.Replace("{", "").Replace("}", "");
-                var placeholder = _registeredPlaceholders.FirstOrDefault(_placeholder => _placeholder.Identifier == GetIdentifierFromPlaceholder(placeholderString));
+                var placeholder = _registeredPlaceholders.FirstOrDefault(_placeholder => placeholderString.StartsWith(_placeholder.Identifier));
 
                 if (placeholder == default)
                 {

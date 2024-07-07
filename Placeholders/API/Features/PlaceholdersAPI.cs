@@ -72,10 +72,5 @@ namespace Placeholders.API.Features
 
             return result;
         }
-
-        private static string GetIdentifierFromPlaceholder(string message)
-        {
-            return message.Split('_').First();
-        }
     }
 }
